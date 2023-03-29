@@ -1,0 +1,13 @@
+temp = float(input("Input temperature: "))
+convers = input("Choose the conversion type R/K/F or r/k/f :")
+if (convers=="R") or (convers=="r"):
+    reamur = (4/5)*temp
+    print (temp,"in R is", format(reamur,'.2f'))
+elif (convers=="K") or (convers=="k"):
+    kelvin = temp+273
+    print (temp,"in K is", format(kelvin,'.2f'))
+elif (convers=="F") or (convers=="f"):
+    fahrenheit = (9/5)*temp+22
+    print (temp,"in F is", format(fahrenheit,'.2f'))
+else:
+    print ("The conversion type you entered is incorrect")
